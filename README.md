@@ -26,8 +26,8 @@ To set up this exercise, follow these steps:
 By completing the following tasks, you will gain practical experience in setting up and managing CI/CD workflows for LaTeX projects, enhancing your understanding of automation and its benefits.
 
 1. **Make a Change in `main.tex`**:
-   - Edit the `main.tex` file (on the `main` branch) to add or modify some content (e.g. add your name as author).
-   - Commit and push your changes:
+   - Edit the `main.tex` file (on the `main` branch) to add or modify some content (e.g., add your name as author).
+   - Commit and push your changes.
    - Check the CI/CD pipeline status on GitHub and get an overview of the pipeline execution:
         - How many workflows are triggered? 
         - How many jobs are executed in each workflow? 
@@ -36,14 +36,14 @@ By completing the following tasks, you will gain practical experience in setting
         - How long does the pipeline take to complete? 
         - What is an artifact?
 
-2. **Modify the Workflow to Run Only on the Main Branch**:
+2. **Modify the Workflow to Run Only on the `main` Branch**:
    - Edit the `.github/workflows/latexBuild.yml` file to ensure the workflow runs only on the `main` branch.
    - Push a change to a different branch and observe if the workflow is triggered. What do you observe?
 
 3. **Use an Action to Speed Up the Compilation Process**:
    - Go to the [GitHub Marketplace](https://github.com/marketplace?type=actions) and search for an action that can compile LaTeX documents (hint: use `texlive` as a keyword).
    - Modify the workflow to use an action to speed up the LaTeX compilation process.
-   - Observe the pipeline run time before and after adding the action. What do you observe and why?
+   - Observe the pipeline run time before and after adding the action. What do you observe, and why?
 
 4. **Add a Second Workflow Using the TeX Live Docker Image**:
    - Create a new workflow file `.github/workflows/latex-docker.yml` that uses the [TeX Live Docker image](https://hub.docker.com/r/texlive/texlive) to compile the document.
